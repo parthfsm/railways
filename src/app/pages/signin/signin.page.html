@@ -1,0 +1,78 @@
+<ion-header>
+  <ion-toolbar color="formiwhite">
+    <img class="center" src="/assets/img/formiLogo.png"/>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="formiwhite">
+  <ion-grid>
+    
+    <ion-row>
+      <ion-col>
+          <ion-icon size="large" name="arrow-back-outline"></ion-icon>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-text color="formidarkblue">
+          <h1 style="font-family:SFProText; font-weight: bold;">Sign In</h1>
+        </ion-text>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-text style="font-family:SFProText; font-variant: medium;" class="g-custom-text-size-14">
+          Username/Email ID
+        </ion-text>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-input class="g-custom-input-border" type="string"></ion-input>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-text style="font-family:SFProText;" class="g-custom-text-size-14">Password</ion-text>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-input class="g-custom-input-border" type="password"></ion-input>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-button color="formidarkblue" expand="block" routerLink="/homepage">
+          <ion-col class="ion-text-start"><ion-text class="ion-text-start">Sign In</ion-text></ion-col>
+          <ion-col class="ion-text-end"><ion-icon name="arrow-forward-outline" style="text-align: right;"></ion-icon></ion-col>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+    
+  </ion-grid>
+</ion-content>
+
+<ion-footer class = "g-custom-footert-background">
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-text style="font-family:SFProText; font-style: bold;">or sign in via</ion-text>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-button color="formidarkblue" expand="block">
+          <ion-text color="formiwhite" style="font-family:Poppins-Bold; font-size: x-large;" class="ion-text-lowercase">
+            facebook
+          </ion-text>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-footer>

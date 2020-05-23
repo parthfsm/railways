@@ -3,6 +3,51 @@
 
 /** Ionic CSS Variables **/
 :root {
+
+  --ion-font-family: "Poppins";
+
+  --ion-color-formibrightred: #fe414d;
+  --ion-color-formibrightred-rgb: 254,65,77;
+  --ion-color-formibrightred-contrast: #ffffff;
+  --ion-color-formibrightred-contrast-rgb: 255,255,255;
+  --ion-color-formibrightred-shade: #e03944;
+  --ion-color-formibrightred-tint: #fe545f;
+
+  --ion-color-formidarkblue: #113b4d;
+  --ion-color-formidarkblue-rgb: 17,59,77;
+  --ion-color-formidarkblue-contrast: #ffffff;
+  --ion-color-formidarkblue-contrast-rgb: 255,255,255;
+  --ion-color-formidarkblue-shade: #0f3444;
+  --ion-color-formidarkblue-tint: #294f5f;
+
+  --ion-color-formiwhite: #FFFFFF;
+  --ion-color-formiwhite-rgb: 255,255,255;
+  --ion-color-formiwhite-contrast: #000000;
+  --ion-color-formiwhite-contrast-rgb: 0,0,0;
+  --ion-color-formiwhite-shade: #e0e0e0;
+  --ion-color-formiwhite-tint: #ffffff;
+
+  --ion-color-formiblack: #000000;
+  --ion-color-formiblack-rgb: 0,0,0;
+  --ion-color-formiblack-contrast: #ffffff;
+  --ion-color-formiblack-contrast-rgb: 255,255,255;
+  --ion-color-formiblack-shade: #000000;
+  --ion-color-formiblack-tint: #1a1a1a;
+
+  --ion-color-formicoral: #ee837d;
+  --ion-color-formicoral-rgb: 238,131,125;
+  --ion-color-formicoral-contrast: #000000;
+  --ion-color-formicoral-contrast-rgb: 0,0,0;
+  --ion-color-formicoral-shade: #d1736e;
+  --ion-color-formicoral-tint: #f08f8a;
+
+  --ion-color-formiteal: #1abcc6;
+  --ion-color-formiteal-rgb: 26,188,198;
+  --ion-color-formiteal-contrast: #000000;
+  --ion-color-formiteal-contrast-rgb: 0,0,0;
+  --ion-color-formiteal-shade: #17a5ae;
+  --ion-color-formiteal-tint: #31c3cc;
+
   /** primary **/
   --ion-color-primary: #3880ff;
   --ion-color-primary-rgb: 56, 128, 255;
@@ -229,4 +274,59 @@
   ion-title.title-large {
     --color: white;
   }
+
+  .ion-color-formicoral {
+    --ion-color-base: var(--ion-color-formicoral);
+    --ion-color-base-rgb: var(--ion-color-formicoral-rgb);
+    --ion-color-contrast: var(--ion-color-formicoral-contrast);
+    --ion-color-contrast-rgb: var(--ion-color-formicoral-contrast-rgb);
+    --ion-color-shade: var(--ion-color-formicoral-shade);
+    --ion-color-tint: var(--ion-color-formicoral-tint);
+  }
+
+  .ion-color-formiteal {
+    --ion-color-base: var(--ion-color-formiteal);
+    --ion-color-base-rgb: var(--ion-color-formiteal-rgb);
+    --ion-color-contrast: var(--ion-color-formiteal-contrast);
+    --ion-color-contrast-rgb: var(--ion-color-formiteal-contrast-rgb);
+    --ion-color-shade: var(--ion-color-formiteal-shade);
+    --ion-color-tint: var(--ion-color-formiteal-tint);
+  }
+
+  .ion-color-formiwhite {
+    --ion-color-base: var(--ion-color-formiwhite);
+    --ion-color-base-rgb: var(--ion-color-formiwhite-rgb);
+    --ion-color-contrast: var(--ion-color-formiwhite-contrast);
+    --ion-color-contrast-rgb: var(--ion-color-formiwhite-contrast-rgb);
+    --ion-color-shade: var(--ion-color-formiwhite-shade);
+    --ion-color-tint: var(--ion-color-formiwhite-tint);
+  }
+
+  .ion-color-formiblack {
+    --ion-color-base: var(--ion-color-formiblack);
+    --ion-color-base-rgb: var(--ion-color-formiblack-rgb);
+    --ion-color-contrast: var(--ion-color-formiblack-contrast);
+    --ion-color-contrast-rgb: var(--ion-color-formiblack-contrast-rgb);
+    --ion-color-shade: var(--ion-color-formiblack-shade);
+    --ion-color-tint: var(--ion-color-formiblack-tint);
+  }
+
+  .ion-color-formidarkblue {
+    --ion-color-base: var(--ion-color-formidarkblue);
+    --ion-color-base-rgb: var(--ion-color-formidarkblue-rgb);
+    --ion-color-contrast: var(--ion-color-formidarkblue-contrast);
+    --ion-color-contrast-rgb: var(--ion-color-formidarkblue-contrast-rgb);
+    --ion-color-shade: var(--ion-color-formidarkblue-shade);
+    --ion-color-tint: var(--ion-color-formidarkblue-tint);
+  }
+
+  .ion-color-formibrightred {
+    --ion-color-base: var(--ion-color-formibrightred);
+    --ion-color-base-rgb: var(--ion-color-formibrightred-rgb);
+    --ion-color-contrast: var(--ion-color-formibrightred-contrast);
+    --ion-color-contrast-rgb: var(--ion-color-formibrightred-contrast-rgb);
+    --ion-color-shade: var(--ion-color-formibrightred-shade);
+    --ion-color-tint: var(--ion-color-formibrightred-tint);
+  }
+
 }

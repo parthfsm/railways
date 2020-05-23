@@ -24,3 +24,69 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+.g-custom-input-border{
+    border: 2px solid var(--ion-color-formidarkblue);
+    border-radius: 5px;
+}
+
+.g-custom-footert-background{
+    background-color: white;
+}
+
+.g-custom-text-size-14{
+  font-size: 14px;
+  color: var(--ion-color-formidarkblue);
+}
+
+.g-custom-text-size-25{
+  font-size: 25px;
+  color: var(--ion-color-formidarkblue);
+}
+
+@font-face {
+    font-family: 'Poppins-Black';
+    src: url('/assets/fonts/Poppins-Black.ttf');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Poppins-Bold';
+    src: url('/assets/fonts/Poppins-Bold.ttf');
+    font-weight: bold;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Poppins-ExtraBold';
+    src: url('/assets/fonts/Poppins-ExtraBold.ttf');
+    font-weight: bold;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Poppins-Regular';
+    src: url('/assets/fonts/Poppins-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Poppins-SemiBold';
+    src: url('/assets/fonts/Poppins-SemiBold.ttf');
+    font-weight: bold;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'SFProText';
+    font-variant: medium;
+    src: url('./assets/fonts/SFProText-Medium.ttf');
+  }
+
+  @font-face {
+    font-family: 'SFProText';
+    font-variant: bold;
+    src: url('./assets/fonts/SFProText-Bold.ttf');
+  }

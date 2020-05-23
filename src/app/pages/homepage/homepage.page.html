@@ -1,0 +1,130 @@
+<ion-header>
+  <ion-toolbar color="formiwhite">
+    <img alt="Formi Logo " src="/assets/img/formiLogo.png"/>
+    <ion-icon size="large" slot="primary" name="search-outline" class="ion-padding-end"></ion-icon>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="formiwhite">
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-label style="font-family:SFProText; font-variant: bold;">Treanding categories</ion-label>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="12">
+        <ion-segment scrollable>
+          <ion-segment-button
+            *ngFor="let category of categories"
+            value="{{category}}"
+          >
+            <ion-card color="formiwhite" class="ion-padding">
+              <ion-card-header>
+                <ion-avatar>
+                  <ion-img src="/assets/icon/favicon.png"></ion-img>
+                </ion-avatar>
+              </ion-card-header>
+              <ion-card-subtitle style="font-family:SFProText; font-variant: bold;">{{category}}</ion-card-subtitle>
+            </ion-card>
+          </ion-segment-button>
+        </ion-segment>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-item color="formiwhite">
+          <ion-icon color="formibrightred" name="add-circle-outline"></ion-icon>
+          <ion-label style="font-family:SFProText; font-variant: bold;" class="ion-padding-start">Create a challenge</ion-label>
+          <ion-icon name="information-circle-outline"></ion-icon>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-card color="formiwhite">
+          <ion-item color="formiwhite">
+            <ion-avatar slot="start">
+              <ion-img src="/assets/icon/favicon.png"></ion-img>
+            </ion-avatar>
+            <ion-label style="font-family:SFProText; font-variant: bold;">
+              <h3>John Doe</h3>
+              Posted 12 minutes ago<ion-icon color="formibrightred" name="globe-outline"></ion-icon>
+            </ion-label>
+          </ion-item>
+          <ion-card-content style="font-family:SFProText; font-variant: medium;">
+            Keep close to Nature's heart... and break clear away, once in
+            awhile, and climb a mountain or spend a week in the woods. Wash your
+            spirit clean.
+          </ion-card-content>
+          <img alt="Card Image" src="/assets/img/maxresdefault.jpg" />
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="3">
+        <ion-button expand="block" fill="clear" color="formiblack" style = "font-size:0.5em">
+          <ion-icon name="hourglass-outline"></ion-icon>
+          Join Challenge
+        </ion-button>
+      </ion-col>
+      <ion-col size="3">
+        <ion-button expand="block" fill="clear" color="formiblack" style = "font-size:0.6em">
+          <ion-icon name="heart"></ion-icon>
+          Like
+        </ion-button>
+      </ion-col>
+      <ion-col size="3">
+        <ion-button expand="block" fill="clear" color="formiblack" style = "font-size:0.6em">
+          <ion-icon name="chatbubble-ellipses-outline"></ion-icon>Comment
+        </ion-button>
+      </ion-col>
+      <ion-col size="3">
+        <ion-button expand="block" fill="clear" color="formiblack" style = "font-size:0.6em">
+          <ion-icon name="share-outline"></ion-icon>
+          Share
+        </ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size = "12">
+        <ion-item color="formiwhite">
+          <ion-avatar slot="start">
+            <ion-img src="/assets/icon/favicon.png"></ion-img>
+          </ion-avatar>
+          <ion-input type="string" placeholder="Add a comment" style="font-family:Poppins-Regular"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+
+<!--<ion-tabs>
+  <ion-tab-bar slot="bottom" color="formiwhite">
+    <ion-tab-button tab="home">
+      <ion-icon name="home"></ion-icon>
+      <ion-label>Home</ion-label>
+      <ion-badge>6</ion-badge>
+    </ion-tab-button>
+
+    <ion-tab-button tab="reward">
+      <ion-icon name="person-circle"></ion-icon>
+      <ion-label>Reward</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="challenges">
+      <ion-icon name="hourglass"></ion-icon>
+      <ion-label>Challenges</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="notification">
+      <ion-icon name="notifications-outline"></ion-icon>
+      <ion-label>Notification</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="profile">
+      <ion-icon name="person-circle-outline"></ion-icon>
+      <ion-label>Profile</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>-->
