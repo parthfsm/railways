@@ -1,14 +1,13 @@
-<ion-header>
-  <ion-toolbar color="formiwhite">
-    <img alt="Formi Logo " src="/assets/img/formiLogo.png"/>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content color="formiwhite">
-  <ion-grid>
+  <ion-header>
+    <ion-toolbar color="formiwhite" class="toolbar-style">
+      <img style="height: 2em; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);" alt="Formi Logo" src="/assets/img/formiLogo.png"/>
+    </ion-toolbar>
+  </ion-header>
+    <ion-grid>
     <ion-row>
       <ion-col>
-          <ion-icon size="large" name="arrow-back-outline"></ion-icon>
+          <ion-icon size="large" name="arrow-back-sharp"></ion-icon>
       </ion-col>
     </ion-row>
 
@@ -82,8 +81,8 @@
     <ion-row>
       <ion-col>
         <ion-input class="g-custom-input-border" type="string">
-          DD/MM/YYYY
-          <ion-icon slot="primary" name="calendar-outline"></ion-icon>
+          <ion-col size="11">DD/MM/YYYY</ion-col>
+          <ion-col><ion-icon name="calendar-outline"></ion-icon></ion-col>
         </ion-input>
       </ion-col>
     </ion-row>
@@ -102,11 +101,11 @@
           <ion-radio-group>
             <ion-item color="formiwhite">
               <ion-radio value="male"></ion-radio>
-              <ion-label class="ion-padding-start">Male</ion-label>
+              <ion-label class="ion-padding-start" style="font-family: SFProText;">Male</ion-label>
               <ion-radio value="female"></ion-radio>
-              <ion-label class="ion-padding-start">Female</ion-label>
+              <ion-label class="ion-padding-start" style="font-family: SFProText;">Female</ion-label>
               <ion-radio value="other"></ion-radio>
-              <ion-label class="ion-padding-start">Other</ion-label>
+              <ion-label class="ion-padding-start" style="font-family: SFProText;">Other</ion-label>
               </ion-item>
           </ion-radio-group>
         </ion-text>
@@ -114,22 +113,28 @@
     </ion-row>
 
     <ion-row>
-      <ion-col>
-        <ion-text color="formidarkblue" style="font-family: SFProText;">
+      <ion-col size="1">
           <ion-checkbox></ion-checkbox>
-          <ion-text color="formidarkblue" style="font-family: SFProText;">I agree to the ternms and conditions text.</ion-text>
-        </ion-text>
+      </ion-col>
+      <ion-col>
+          <ion-text color="formidarkblue" style="font-family: SFProText; font-size: 0.8em;">Lorem ipsum dolor sit amet, consectetur adipiscing elit,</ion-text>
+          <ion-text style="text-decoration: underline; font-family: SFProText; font-size: 0.9em;">Terms and Conditions</ion-text>
       </ion-col>
     </ion-row>
 
+    
     <ion-row>
       <ion-col>
-        <ion-button color="formidarkblue" expand="block" routerLink="/homepage">
-          <ion-col class="ion-text-start"><ion-text color="formiwhite"><p style="font-family: SFProText;">Next</p></ion-text></ion-col>
-          <ion-col class="ion-text-end"><ion-icon name="arrow-forward-outline"></ion-icon></ion-col>
+        <ion-button color="formidarkblue" expand="block" routerLink="/homepage"  mode="md">
+          <ion-col class="ion-text-start">
+            <ion-text class="ion-text-capitalize" color="formiwhite" style="font-family: SFProText; font-size: 1.2em;">
+              Next
+            </ion-text>
+          </ion-col>
+          <ion-col class="ion-text-end"><ion-icon name="arrow-forward-outline" style="font-size: 1.5em;"></ion-icon></ion-col>
         </ion-button>
       </ion-col>
     </ion-row>
-
+    
   </ion-grid>
 </ion-content>

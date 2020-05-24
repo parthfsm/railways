@@ -1,21 +1,20 @@
-<ion-header>
-  <ion-toolbar color="formiwhite">
-    <img alt="Formi Logo " src="/assets/img/formiLogo.png"/>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content color="formiwhite">
-  <ion-grid>
+  <ion-header>
+    <ion-toolbar color="formiwhite" class="toolbar-style">
+      <img style="height: 2em; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);" alt="Formi Logo" src="/assets/img/formiLogo.png"/>
+    </ion-toolbar>
+  </ion-header>
+     <ion-grid>
     <ion-row>
       <ion-col>
-          <ion-icon size="large" name="arrow-back-outline"></ion-icon>
+          <ion-icon size="large" name="arrow-back-sharp"></ion-icon>
       </ion-col>
     </ion-row>
 
     <ion-row>
       <ion-col>
         <ion-text color="formidarkblue">
-          <h1 style="font-family:SFProText; font-variant: bold;">Sign Up</h1>
+          <h1 style="font-family:SFProText; font-variant: bold; margin-bottom: 0;">Sign Up</h1>
         </ion-text>
       </ion-col>
     </ion-row>
@@ -41,7 +40,7 @@
       </ion-col>
     </ion-row>
 
-    <ion-row>
+    <ion-row class="ion-padding-top">
       <ion-col>
         <ion-text color="formidarkblue" style="font-family:SFProText; font-variant: medium;">Enter Password</ion-text>
       </ion-col>
@@ -52,9 +51,9 @@
       </ion-col>
     </ion-row>
 
-    <ion-row>
+    <ion-row class="ion-padding-top">
       <ion-col>
-        <ion-text color="formidarkblue" style="font-family:SFProText; font-variant: medium;">Re-enter Password</ion-text>
+        <ion-text color="formidarkblue" style="font-family:SFProText; font-variant: medium;">Re-Enter Password</ion-text>
       </ion-col>
     </ion-row>
     <ion-row>
@@ -63,28 +62,46 @@
       </ion-col>
     </ion-row>
 
-    <ion-row>
+    <ion-row class="ion-padding-top">
       <ion-col>
         <div>
-          <ion-button color="formidarkblue" expand="block" routerLink="/complete-profile">
-            <ion-col size="6" class="ion-text-start"><ion-text color="formiwhite"><p style="font-family:SFProText; font-variant: medium;" >Sign Up</p></ion-text></ion-col>
-            <ion-col size="6" class="ion-text-end"><ion-icon name="arrow-forward-outline"></ion-icon></ion-col>
+          <ion-button color="formidarkblue" expand="block" routerLink="/complete-profile" mode="md">
+            <ion-col size="6" class="ion-text-start">
+              <ion-text class="ion-text-capitalize" color="formiwhite" style="font-family:SFProText; font-variant: medium; font-size: 1.2em;">
+                Sign Up
+              </ion-text>
+            </ion-col>
+            <ion-col size="6" class="ion-text-end"><ion-icon name="arrow-forward-outline" style="font-size: 1.5em;"></ion-icon></ion-col>
           </ion-button>
         </div>
      
       </ion-col>
     </ion-row>
+  </ion-grid>
+</ion-content>
 
+<ion-footer class="g-custom-footer-background">
+  <ion-grid>
     <ion-row>
-      <ion-col>
-        <ion-text style="font-family:SFProText; font-style: bold;" class="g-custom-text-size-14">or sign in via</ion-text>
+      <ion-col size="12">
+        <ion-text
+          color="formidarkblue"
+          style="font-family: SFProText; font-weight: normal; font-size: 1em;"
+          >or sign up via</ion-text
+        >
       </ion-col>
     </ion-row>
 
     <ion-row>
       <ion-col>
-        <ion-button color="formidarkblue" expand="block" routerLink="/signupotp">
-          <ion-text color="formiwhite" style="font-family:SFProText; font-variant: medium;">
+        <ion-button color="formidarkblue" expand="block" mode="md" routerLink="/signupotp">
+          <ion-text
+            color="formiwhite"
+            style="
+              font-family: SFProText;
+              font-weight: normal;
+              font-size: 1em;
+            ">
             OTP
           </ion-text>
         </ion-button>
@@ -94,12 +111,20 @@
 
     <ion-row>
       <ion-col>
-        <ion-button color="formidarkblue" expand="block">
-          <ion-text color="formiwhite" style="font-family:SFProText; font-variant: medium; font-size: x-large;" class="ion-text-lowercase">
+        <ion-button color="formidarkblue" expand="block" mode="md">
+          <ion-text
+            color="formiwhite"
+            style="
+              font-family: Poppins;
+              font-weight: bold;
+              font-size: x-large;
+            "
+            class="ion-text-lowercase"
+          >
             facebook
           </ion-text>
         </ion-button>
       </ion-col>
     </ion-row>
   </ion-grid>
-</ion-content>
+</ion-footer>

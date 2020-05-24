@@ -30,8 +30,11 @@
     border-radius: 5px;
 }
 
-.g-custom-footert-background{
+.g-custom-footer-background{
     background-color: white;
+    padding-left: 0.9em;
+    padding-right: 0.9em;
+    padding-bottom: 0.9em;   
 }
 
 .g-custom-text-size-14{
@@ -42,6 +45,10 @@
 .g-custom-text-size-25{
   font-size: 25px;
   color: var(--ion-color-formidarkblue);
+}
+
+.toolbar-style{
+  --border-style: none;
 }
 
 @font-face {
